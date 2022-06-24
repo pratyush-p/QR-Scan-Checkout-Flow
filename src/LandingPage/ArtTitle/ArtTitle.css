@@ -1,0 +1,35 @@
+.art-title {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 80px;
+}
+
+@media (min-width: 400) {
+  .art-title {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 576px) {
+  .art-title {
+    font-size: 120px;
+  }
+}
+
+@media (min-width: 767px) {
+  .art-title {
+    font-size: 150px;
+  }
+}
+
+@media (min-width: 992px) {
+  .art-title {
+    font-size: 185px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .art-title {
+    font-size: 215px;
+  }
+}
