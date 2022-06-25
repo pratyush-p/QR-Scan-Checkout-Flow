@@ -1,11 +1,17 @@
 import React from "react";
-import ArtTitle from "./ArtTitle/ArtTitle";
+import ArtHeader from "./ArtHeader/ArtHeader";
+import ArtHeaderUnderlay from "./ArtHeader/ArtHeaderUnderlay";
+import Desc from "./Description/Desc";
 import "./LandingPageStyle.css";
 
 function LandingPage(): JSX.Element {
   return (
     <>
-      <ArtTitle title="I-Ball" />
+      <ArtHeader />
+      <ArtHeaderUnderlay />
+      <div className="container-lg">
+        <Desc />
+      </div>
     </>
   );
 }

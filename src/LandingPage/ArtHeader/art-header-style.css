@@ -1,0 +1,10 @@
+.main-art {
+    margin-top: 10px;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+.bgfade {
+    background-color: hsl(0, 0, 100);
+    /* transition: background-color 2s; */
+}

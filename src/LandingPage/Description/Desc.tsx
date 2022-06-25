@@ -1,7 +1,13 @@
-import React from "React";
+import React from "react";
+import DescText from "./DescText";
+import "./TextStyle.css";
 
 function Desc() {
-  return <></>;
+  return (
+    <div>
+      <DescText />
+    </div>
+  );
 }
 
 export default Desc;
