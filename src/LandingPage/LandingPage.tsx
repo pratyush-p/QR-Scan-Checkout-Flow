@@ -1,5 +1,6 @@
 import React from "react";
 import ArtFooter from "./ArtFooter/ArtFooter";
+import ArtFooterUnderlay from "./ArtFooter/ArtFooterUnderlay";
 import ArtHeader from "./ArtHeader/ArtHeader";
 import ArtHeaderUnderlay from "./ArtHeader/ArtHeaderUnderlay";
 import Desc from "./Description/Desc";
@@ -16,6 +17,7 @@ function LandingPage(): JSX.Element {
         </div>
       </div>
       <ArtFooter />
+      <ArtFooterUnderlay />
     </>
   );
 }

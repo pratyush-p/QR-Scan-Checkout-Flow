@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ArtTitle from "./ArtTitle/ArtTitle";
 import "./art-header-style.css";
 
@@ -24,7 +24,7 @@ function ArtHeaderUnderlay() {
           <img
             src="/exampleart.png"
             className="w-100 main-art"
-            alt="Responsive image"
+            alt="Hamburder 3: The Climax"
           />
         </div>
         <ArtTitle title="I-Ball" />
