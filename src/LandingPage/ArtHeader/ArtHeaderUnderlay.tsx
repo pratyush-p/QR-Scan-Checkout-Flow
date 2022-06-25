@@ -15,11 +15,11 @@ function ArtHeaderUnderlay() {
     setScroll(scroll);
   };
 
-  console.log(window.onscroll);
+  // console.log(window.onscroll);
 
   return (
     <>
-      <div className="container-lg bgfade">
+      <div className="container-lg d-lg-none bgfade">
         <div className="text-center">
           <img
             src="/exampleart.png"

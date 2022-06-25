@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import ArtTitle from "./ArtTitle/ArtTitle";
 import "./art-header-style.css";
-import ReactDOM from "react-dom/client";
 
 function ArtHeader() {
   var [scroll, setScroll] = useState(0.0);
   var [scrollToHex, setScrollHex] = useState("#fff");
+
+  var [scrollInv, setScrollInv] = useState(0.0);
+  var [scrollToHexInv, setScrollHexInv] = useState("#fff");
 
   function hslToHex(h, s, l) {
     l /= 100;
@@ -25,23 +27,30 @@ function ArtHeader() {
     const windowHeight =
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
+    var scroll_eased =
+      (490 / 778) * (Math.cbrt(totalScroll / windowHeight - 0.5) + 0.5);
+    var scroll_init_inv = scroll_eased * 100;
     var scroll_init = (totalScroll / windowHeight) * -100 + 100;
     var scroll_H = 42 + (scroll_init * 58) / 100;
 
-    scroll = scroll_H;
+    scroll = scroll_init;
+    scrollInv = scroll_init_inv;
 
     scrollToHex = hslToHex(0, 0, scroll);
+    scrollToHexInv = hslToHex(0, 0, scrollInv);
 
     setScroll(scroll);
     setScrollHex(scrollToHex);
+    setScrollInv(scrollInv);
+    setScrollHexInv(scrollToHexInv);
+
+    console.log(scrollToHex);
+    // console.log(scrollToHexInv);
   };
 
   return (
     <>
-      <div
-        className="container-lg fixed-top"
-        style={{ backgroundColor: scrollToHex }}
-      >
+      <div className="container-lg d-lg-none fixed-top bgfade">
         <div className="text-center">
           <img
             src="/exampleart.png"
@@ -49,7 +58,17 @@ function ArtHeader() {
             alt="Responsive image"
           />
         </div>
-        <ArtTitle title="I-Ball" />
+        <ArtTitle title="I-BALL" bgHex={scrollToHex} bgText={scrollToHexInv} />
+      </div>
+      <div className="container-lg d-none d-lg-block bgfade">
+        <div className="text-center">
+          <img
+            src="/exampleart.png"
+            className="w-100 main-art"
+            alt="Responsive image"
+          />
+        </div>
+        <ArtTitle title="I-BALL" bgHex={scrollToHex} bgText={scrollToHexInv} />
       </div>
     </>
   );

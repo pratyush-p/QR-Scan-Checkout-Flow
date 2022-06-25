@@ -4,9 +4,16 @@ import "./ArtTitle.css";
 function ArtTitle(props) {
   return (
     <>
-      <div className="text-center">
-        <h1 className="art-title">{props.title}</h1>
-      </div>
+      <a href="#desc">
+        <div
+          className="text-center title-container"
+          style={{ backgroundColor: props.bgHex }}
+        >
+          <h1 className="art-title" style={{ color: props.bgText }}>
+            {props.title}
+          </h1>
+        </div>
+      </a>
     </>
   );
 }

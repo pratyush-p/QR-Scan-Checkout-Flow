@@ -4,7 +4,7 @@ import "./TextStyle.css";
 
 function Desc() {
   return (
-    <div>
+    <div className="my-4">
       <DescText />
     </div>
   );

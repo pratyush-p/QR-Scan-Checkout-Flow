@@ -1,0 +1,16 @@
+.buy-container{
+  background-color: #fff;
+  /* margin-bottom: 10px; */
+}
+
+.button-container{
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.footer-text {
+  font-family: 'Poppins';
+  margin-bottom: 0px;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import ArtFooter from "./ArtFooter/ArtFooter";
 import ArtHeader from "./ArtHeader/ArtHeader";
 import ArtHeaderUnderlay from "./ArtHeader/ArtHeaderUnderlay";
 import Desc from "./Description/Desc";
@@ -8,10 +9,13 @@ function LandingPage(): JSX.Element {
   return (
     <>
       <ArtHeader />
-      <ArtHeaderUnderlay />
-      <div className="container-lg">
-        <Desc />
+      <div id="desc">
+        <ArtHeaderUnderlay />
+        <div className="container-lg">
+          <Desc />
+        </div>
       </div>
+      <ArtFooter />
     </>
   );
 }
