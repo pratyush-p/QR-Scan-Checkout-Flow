@@ -1,13 +1,13 @@
 .buy-container{
   background-color: #fff;
-  /* margin-bottom: 10px; */
+  z-index: 3;
 }
 
 .button-container{
-  border-radius: 20px;
+  border-radius: 10px;
   margin-bottom: 10px;
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .footer-text {

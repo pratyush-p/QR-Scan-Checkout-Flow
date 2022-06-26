@@ -5,22 +5,14 @@ function ArtFooter() {
   return (
     <>
       <div className="buy-container container-fluid d-lg-none fixed-bottom">
-        <div className="row">
-          <div className="col-12">
-            <button className="btn btn-dark btn-lg btn-block w-100 button-container">
-              <h1 className="display-1 footer-text">Buy Now.</h1>
-            </button>
-          </div>
-        </div>
+        <button className="btn btn-dark w-100 button-container">
+          <h1 className="display-1 footer-text py-2">Buy Now</h1>
+        </button>
       </div>
       <div className="buy-container container-fluid d-none d-lg-block">
-        <div className="row">
-          <div className="col-12">
-            <button className="btn btn-dark btn-lg btn-block w-100 button-container">
-              <h1 className="display-1 footer-text">Buy Now.</h1>
-            </button>
-          </div>
-        </div>
+        <button className="btn btn-dark w-100 button-container">
+          <h1 className="display-1 footer-text py-2">Buy Now</h1>
+        </button>
       </div>
     </>
   );
