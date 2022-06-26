@@ -9,7 +9,7 @@ function ArtTitle(props) {
           className="text-center title-container"
           style={{ backgroundColor: props.bgHex }}
         >
-          <h1 className="art-title" style={{ color: props.bgText }}>
+          <h1 className="art-title py-3" style={{ color: props.bgText }}>
             {props.title}
           </h1>
         </div>

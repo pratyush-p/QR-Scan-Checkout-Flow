@@ -47,7 +47,7 @@ function ArtHeader() {
     setScrollInv(scrollInv);
     setScrollHexInv(scrollToHexInv);
 
-    // console.log(scrollToHex);
+    console.log(scrollToHex);
     // console.log(scrollToHexInv);
   };
 
@@ -85,7 +85,7 @@ function ArtHeader() {
             id="artPhoto"
           />
         </div>
-        <ArtTitle title="I-BALL" bgHex={scrollToHex} bgText={scrollToHexInv} />
+        <ArtTitle title="I-Ball" bgHex={scrollToHex} bgText={scrollToHexInv} />
       </div>
       <div className="container-lg d-none d-lg-block bgfade">
         <div className="text-center" onClick={handleImgClick}>
@@ -102,7 +102,7 @@ function ArtHeader() {
             id="artPhoto"
           />
         </div>
-        <ArtTitle title="I-BALL" bgHex={scrollToHex} bgText={scrollToHexInv} />
+        <ArtTitle title="I-BELL" bgHex={scrollToHex} bgText={scrollToHexInv} />
       </div>
     </>
   );
