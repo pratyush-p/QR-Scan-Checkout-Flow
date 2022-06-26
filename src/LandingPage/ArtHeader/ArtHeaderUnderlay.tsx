@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ArtTitle from "./ArtTitle/ArtTitle";
 import "./art-header-style.css";
+import dummyText from "../dummyText";
 
 function ArtHeaderUnderlay() {
   var [scroll, setScroll] = useState(0.0);
@@ -27,7 +28,7 @@ function ArtHeaderUnderlay() {
             alt="Hamburder 3: The Climax"
           />
         </div>
-        <ArtTitle title="I-Ball" />
+        <ArtTitle title={dummyText.artTitle} />
       </div>
     </>
   );

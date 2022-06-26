@@ -1,5 +1,5 @@
 .buy-container{
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
   z-index: 3;
 }
 
@@ -8,9 +8,11 @@
   margin-bottom: 10px;
   padding-top: 0px;
   padding-bottom: 0px;
+  /* box-shadow: 0px 4px 2px rgb(100, 100, 100);  */
 }
 
 .footer-text {
   font-family: 'Poppins';
   margin-bottom: 0px;
+  color: #fff;
 }

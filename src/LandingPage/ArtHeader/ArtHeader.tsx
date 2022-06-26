@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ArtTitle from "./ArtTitle/ArtTitle";
 import "./art-header-style.css";
+import dummyText from "../dummyText";
 
 function ArtHeader() {
   var [scroll, setScroll] = useState(0.0);
@@ -47,7 +48,7 @@ function ArtHeader() {
     setScrollInv(scrollInv);
     setScrollHexInv(scrollToHexInv);
 
-    console.log(scrollToHex);
+    // console.log(scrollTaoHex);
     // console.log(scrollToHexInv);
   };
 
@@ -73,9 +74,9 @@ function ArtHeader() {
       <div className="container-lg d-lg-none fixed-top bgfade">
         <div className="text-center" onClick={handleImgClick}>
           <div className="artist-text">
-            <h1 className="created-by">Created By</h1>
-            <h1 className="artist-name">Mr. Artist</h1>
-            <h1 className="artist-year">2022</h1>
+            <h1 className="created-by">{dummyText.artCreatedBy}</h1>
+            <h1 className="artist-name">{dummyText.artArtist}</h1>
+            <h1 className="artist-year">{dummyText.artYear}</h1>
           </div>
           <img
             src="/exampleart.png"
@@ -85,14 +86,18 @@ function ArtHeader() {
             id="artPhoto"
           />
         </div>
-        <ArtTitle title="I-Ball" bgHex={scrollToHex} bgText={scrollToHexInv} />
+        <ArtTitle
+          title={dummyText.artTitle}
+          bgHex={scrollToHex}
+          bgText={scrollToHexInv}
+        />
       </div>
       <div className="container-lg d-none d-lg-block bgfade">
         <div className="text-center" onClick={handleImgClick}>
           <div className="artist-text-big">
-            <h1 className="created-by">Created By</h1>
-            <h1 className="artist-name">Mr. Artist</h1>
-            <h1 className="artist-year">2022</h1>
+            <h1 className="created-by">{dummyText.artCreatedBy}</h1>
+            <h1 className="artist-name">{dummyText.artArtist}</h1>
+            <h1 className="artist-year">{dummyText.artYear}</h1>
           </div>
           <img
             src="/exampleart.png"
@@ -102,7 +107,11 @@ function ArtHeader() {
             id="artPhoto"
           />
         </div>
-        <ArtTitle title="I-BELL" bgHex={scrollToHex} bgText={scrollToHexInv} />
+        <ArtTitle
+          title={dummyText.artTitle}
+          bgHex={scrollToHex}
+          bgText={scrollToHexInv}
+        />
       </div>
     </>
   );
