@@ -1,0 +1,75 @@
+.main-art {
+    margin-top: 10px;
+    border-radius: 10px;
+    z-index: 3;
+    position: relative;
+    opacity: 1.0;
+    transition: opacity 0.5s;
+    /* box-shadow: 5px 5px 10px #000; */
+}
+
+/* .main-art */
+
+.bgfade {
+    background-color: #fff;
+    /* transition: background-color 2s; */
+}
+
+.artist-text{
+    z-index: 1;
+    position: fixed;
+    /* top: 0; */
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.artist-text-big {
+    z-index: 1;
+    position: absolute;
+    /* top: 0; */
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.created-by{
+    font-size: 30px;
+    font-family: "Poppins";
+    margin-left: -85px;
+}
+
+.artist-name {
+    font-size: 60px;
+    font-family: "Poppins";
+    font-weight: bold;
+    margin-top: -17px;
+}
+
+.artist-year {
+    font-size: 60px;
+    font-family: "Poppins";
+    font-weight: lighter;
+    margin-left: -115px;
+}
+
+@media (max-width: 400px) {
+    .created-by {
+        font-size: 20px;
+        font-family: "Poppins";
+        margin-left: -57px;
+    }
+
+    .artist-name {
+        font-size: 40px;
+        font-family: "Poppins";
+        font-weight: bold;
+        margin-top: -17px;
+    }
+
+    .artist-year {
+        font-size: 40px;
+        font-family: "Poppins";
+        font-weight: lighter;
+        margin-left: -75px;
+    }
+}
+
